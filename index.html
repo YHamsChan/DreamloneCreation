@@ -1,4 +1,6 @@
-<style> .ScrollWrapper {
+<style>
+  
+.ScrollWrapper {
   display: flex;
   overflow-x: auto;
   gap: 16px;
@@ -7,27 +9,40 @@
 }
 
 .ScrollItem {
-  min-width: 200px; /* or 300px etc */
-  flex-shrink: 0;
+  min-width: 200px;
+  flex-shrink: 0; /* Following the size of it child*/
   scroll-snap-align: start;
-  background: #f8f8f8;
+  color: white;
+  background: #59529C;
   padding: 10px;
   border: 1px solid #ccc;
 }
 
 .BasicButton {
-  background: blue;
-  font-family: 'Comic Sans MS';
-  min-width: 20px;
-  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.BasicButton button {
+  border-radius: 10px;
+  border: 5px solid #4C9BB0;
+  font-family: 'Comic Sans MS';
+  font-size: large;
+  color: white;
+	background: #7BB6C1;
+  min-width: 100px;
+  max-width: 80px;
+  min-height: 40px;
+}
+  
 </style>
 
 <div class="ScrollWrapper">
   <div class="ScrollItem">
   <h2>Dream City Line</h2>
-  <p>School based RPG and Open-World game.</p>
-  <button class="BasicButton" onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
+  <p>School based RPG and Open-World game.
+	</p>
+  <div class="BasicButton"><button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button></div>
   </div>
   <div class="ScrollItem">Column 2</div>
   <div class="ScrollItem">Column 3</div>
@@ -35,3 +50,4 @@
   <div class="ScrollItem">Column 5</div>
   <div class="ScrollItem">Column 6</div>
 </div>
+<h2>WEB WIP</h2>
