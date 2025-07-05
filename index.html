@@ -1,53 +1,66 @@
-<style>
-  
-.ScrollWrapper {
-  display: flex;
-  overflow-x: auto;
-  gap: 16px;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Play Dream City Line and discover a school-based RPG and open-world Roblox experience!" />
+  <title>Dream City Line Web</title>
+  <style>
+    .ScrollWrapper {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
 
-.ScrollItem {
-  min-width: 200px;
-  flex-shrink: 0; /* Following the size of it child*/
-  scroll-snap-align: start;
-  color: white;
-  background: #59529C;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
+    .ScrollItem {
+      min-width: 200px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      color: white;
+      background: #59529C;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
 
-.BasicButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.BasicButton button {
-  border-radius: 10px;
-  border: 5px solid #4C9BB0;
-  font-family: 'Comic Sans MS';
-  font-size: large;
-  color: white;
-	background: #7BB6C1;
-  min-width: 100px;
-  max-width: 80px;
-  min-height: 40px;
-}
-  
-</style>
+    .BasicButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-<div class="ScrollWrapper">
-  <div class="ScrollItem">
-  <h2>Dream City Line</h2>
-  <p>School based RPG and Open-World game.
-	</p>
-  <div class="BasicButton"><button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button></div>
+    .BasicButton button {
+      border-radius: 10px;
+      border: 5px solid #4C9BB0;
+      font-family: 'Comic Sans MS';
+      font-size: large;
+      color: white;
+      background: #7BB6C1;
+      min-width: 100px;
+      max-width: 80px;
+      min-height: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="ScrollWrapper">
+    <div class="ScrollItem">
+      <h2>Dream City Line</h2>
+      <p>School based RPG and Open-World game.</p>
+      <div class="BasicButton">
+        <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
+      </div>
+    </div>
+    <div class="ScrollItem">Column 2</div>
+    <div class="ScrollItem">Column 3</div>
+    <div class="ScrollItem">Column 4</div>
+    <div class="ScrollItem">Column 5</div>
+    <div class="ScrollItem">Column 6</div>
   </div>
-  <div class="ScrollItem">Column 2</div>
-  <div class="ScrollItem">Column 3</div>
-  <div class="ScrollItem">Column 4</div>
-  <div class="ScrollItem">Column 5</div>
-  <div class="ScrollItem">Column 6</div>
-</div>
-<h2>WEB WIP</h2>
+
+  <h2>WEB WIP</h2>
+</body>
+</html>
