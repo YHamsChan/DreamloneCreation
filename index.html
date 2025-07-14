@@ -4,141 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="Play Dream City Line and discover a school-based RPG and open-world Roblox experience!" />
-  <title>Dream City Line Web</title>
-  <style>
-    .HeadTitle {
-      color: white;
-      text-align: center;
-      font-family: Helvetica;
-      font-size: xxx-large;
-    }
-
-    .SubTitle {
-      color: white;
-      text-align: center;
-      font-family: Helvetica;
-      font-size: x-large;
-    }
-
-    .BasicText {
-      color: white;
-      font-family: 'Comic Sans Ms';
-    }
-
-    .ScrollWrapper {
-      display: flex;
-      overflow-x: auto;
-      gap: 16px;
-      padding-bottom: 10px;
-      scroll-snap-type: x mandatory;
-    }
-
-    .ScrollItem {
-      min-width: 200px;
-      flex-shrink: 0;
-      scroll-snap-align: start;
-      color: white;
-      background: #490091;
-      padding: 10px;
-      border: 5px solid #3b0273;
-      border-radius: 10px
-    }
-
-    .ScrollItem p {
-      font-family: 'Comic Sans Ms';
-    }
-
-    .BasicButton {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .BasicButton button {
-      margin: 2px;
-      border-radius: 10px;
-      border: 5px solid #4434f7;
-      font-family: 'Comic Sans MS';
-      font-size: large;
-      color: white;
-      background: #483bd4;
-      min-width: 150px;
-      max-width: 150px;
-      min-height: 40px;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="description" content="A small game studio that focus on creating games on Roblox and Godot. ✨" />
+  <link rel="stylesheet" href="styles.css">
+  <title>The Dreamlone Creation Web</title>
+  
 </head>
 <body style="background: #422f91;">
-  <h1 class="HeadTitle">Dreamlone Creation</h1>
+    <header class="Header">
+    <h1 class="HeadTitle">Dreamlone Creation</h1>
+    <div class="BasicButton">
+        <button>About</button>
+        <button>Projects</button>
+    </div>
+</header>
+
+
   <hr style="color: #815eff; border: 10px solid blue; width: 100%;">
   <p class="BasicText">A game studio, used to be called Tiniverse Studio but changed to Dreamlone Creation! <br/>
   Developing games on Roblox and Godot.
   </p>
+
+  <h2 class="SubTitle" style="text-align: left;">🌟Our Games</h2>
   <div class="ScrollWrapper">
     <div class="ScrollItem">
+      <img src="Images/DreamCityLine_Thumbnail.png" alt="Thumbnail.png">  
       <h2 style="font-family: 'Comic Sans Ms';">🌸Dream City Line!</h2>
       <p>School based RPG and Open-World game.</p>
-      <div class="BasicButton">
+      <div class="ButtonsDown">
+        <div class="BasicButton">
         <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
       </div>
       <div class="BasicButton">
         <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
         <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
+      </div>
       </div>
     </div>
     
     <div class="ScrollItem">
+      <img src="Images/CozyCherryCafe_Thumbnail.png" alt="Thumbnail.png">  
       <h2 style="font-family: 'Comic Sans Ms';">🍵Cozy Cherry Café</h2>
       <p>A comfy hangout and café game.</p>
-      <div class="BasicButton">
-        <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
-      </div>
-      <div class="BasicButton">
-        <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
-        <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
-      </div>
-    </div>
-
-    <div class="ScrollItem">
-      <h2 style="font-family: 'Comic Sans Ms';">🛠️Coming Soon</h2>
-      <p>Description Will Be Released soon!.</p>
-      <div class="BasicButton">
-        <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
-      </div>
-      <div class="BasicButton">
-        <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
-        <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
+      <div class="ButtonsDown">
+        <div class="BasicButton">
+            <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
+        </div>
+        <div class="BasicButton">
+            <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
+            <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
+        </div>
       </div>
     </div>
 
     <div class="ScrollItem">
+      <img src="Images/WIP.jpg" alt="Thumbnail.png">  
       <h2 style="font-family: 'Comic Sans Ms';">🛠️Coming Soon</h2>
       <p>Description Will Be Released soon!.</p>
+      <div class="ButtonsDown">
       <div class="BasicButton">
         <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
       </div>
+      
       <div class="BasicButton">
         <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
         <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
+      </div>
       </div>
     </div>
 
     <div class="ScrollItem">
+      <img src="Images/WIP.jpg" alt="Thumbnail.png">
       <h2 style="font-family: 'Comic Sans Ms';">🛠️Coming Soon</h2>
       <p>Description Will Be Released soon!.</p>
+      <div class="ButtonsDown">
       <div class="BasicButton">
         <button onclick="window.location.href='https://www.roblox.com/games/7350267775/Dream-City-Line'">Play</button>
       </div>
+      
       <div class="BasicButton">
         <button onclick="window.location.href='https://dream-city-line.fandom.com/wiki/'">Wiki</button>
         <button onclick="window.location.href='https://dreamcityline.wordpress.com/'">Wordpress</button>
       </div>
+      </div>
     </div>
-  </div>
 
-  <h2 class="SubTitle" style="text-align: left;">Our Team</h2>
+    </div>
+
+  <h2 class="SubTitle" style="text-align: left;">✨Our Team</h2>
    <div class="ScrollWrapper">
     <div class="ScrollItem">
       <h2 style="font-family: 'Comic Sans Ms'; text-align: center;">❄️YHamsChan❄️</h2>
