@@ -42,7 +42,10 @@
 
 /* 💥 Hover + Clicky Effect (Global) */
 .BasicButton button:hover {
-    background-color: #888;
+    background-color: #7d3cff;
+}
+.BasicButtons button:hover {
+    background-color: #7d3cff;
 }
 
 .BasicButton button:active {
@@ -80,206 +83,64 @@
       color: white;
       font-family: 'Comic Sans Ms';
     }
-/* 🌐 GLOBAL RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
 
-/* 🌸 HEADER */
-.Header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 16px 32px;
-  background-color: #ba18ff;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(180, 49, 255, 0.45);
-}
+    .ScrollWrapper {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
 
-.Header .HeadTitle {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  font-family: Helvetica;
-}
+    .ScrollItem {
+      padding: 10px;
+      min-width: 200px;
+      max-width: 25vw;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      color: white;
+      background: #490091;
+      padding: 10px;
+      border: 5px solid #3b0273;
+      border-radius: 10px
+    }
 
-.Header .BasicButton {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.Header .BasicButton button {
-  padding: 8px 16px;
-  background-color: #9100f9;
-  border: 5px solid #6400ac;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.Header .BasicButton button:hover {
-  background-color: #6200ff;
-  border-color: #4900bf;
-}
-
-.Header .BasicButton button:active {
-  transform: scale(0.92);
-}
-
-/* ✨ GENERAL TEXT */
-.HeadTitle {
-  text-align: center;
-  font-size: xxx-large;
-}
-
-.SubTitle {
-  color: white;
-  text-align: center;
-  font-family: Helvetica;
-  font-size: x-large;
-}
-
-.BasicText {
-  color: white;
-  font-family: 'Comic Sans Ms';
-  text-align: center;
-  padding: 16px;
-}
-
-/* 🌟 BUTTONS */
-.BasicButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.BasicButton button {
-  margin: 5px;
-  padding: 8px 16px;
-  font-family: 'Comic Sans MS';
-  font-size: large;
-  color: white;
-  background: #483bd4;
-  border: 5px solid #4434f7;
-  border-radius: 10px;
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 40px;
-  cursor: pointer;
-  transition: transform 0.1s ease, background-color 0.2s ease;
-}
-
-.BasicButton button:hover {
-  background-color: #5b4df0;
-}
-
-.BasicButton button:active {
-  transform: scale(0.92);
-}
-
-/* 🧱 GAME SCROLL WRAPPER */
-.ScrollWrapperGame {
-  display: flex;
-  overflow-x: auto;
-  gap: 16px;
-  padding: 16px;
-  scroll-snap-type: x mandatory;
-}
-
-.ScrollWrapperProfiles {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  padding: 16px;
-  scroll-snap-type: x mandatory;
-}
-
-/* 📦 ITEM CARD */
-.ScrollItem {
-  padding: 10px;
-  min-width: 240px;
-  max-width: 80vw;
-  flex-shrink: 0;
-  scroll-snap-align: start;
-  color: white;
-  background: #490091;
-  border: 5px solid #3b0273;
-  border-radius: 10px;
-}
-
-.ScrollItem img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-  display: block;
-  border-radius: 6px;
-}
-
-.ScrollItem p {
-  font-family: 'Comic Sans Ms';
-  padding: 4px 0;
-  text-align: center;
-}
-
-/* 💠 SPECIAL FOR GAME TITLES */
-.GameTitle {
-  font-family: 'Comic Sans Ms';
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: 8px;
-}
-
-/* 👥 TEAM TITLE */
-.TeamTitle {
-  font-family: 'Comic Sans Ms';
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 4px;
-}
-
-/* 📍 BUTTON WRAPPER */
-.ButtonsDown {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-/* 📱 RESPONSIVE */
-@media screen and (max-width: 768px) {
-  .ScrollItem {
-    max-width: 85vw;
-  }
-
-  .GameTitle,
-  .TeamTitle {
-    font-size: 1rem;
-  }
-
-  .BasicButton button {
-    min-width: 120px;
-    max-width: 120px;
-    font-size: medium;
-  }
-}
-  font-family: 'Comic Sans Ms';
+    .ScrollItem img {
+        width: 100%;
+        height: 12vw; /* or any ratio-based height */
+        object-fit: cover;
+        display: block;
+        border-radius: 6px; /* optional */
+    }
+    
+    .ScrollItem p {
+      font-family: 'Comic Sans Ms';
     }
 
     .BasicButton {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .BasicButtons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .BasicButtons button {
+      padding: 20px;
+      margin: 5px;
+      border-radius: 10px;
+      border: 5px solid #4434f7;
+      font-family: 'Comic Sans MS';
+      font-size: large;
+      color: white;
+      background: #483bd4;
+      min-width: 100px;
+      min-height: 25px;
+      cursor: pointer;
     }
 
     .BasicButton button {
@@ -297,6 +158,5 @@
     }
 
     .ButtonsDown {
-      padding: 10px;
       /*NOTHING, IT SHOULD BE AT THE BOTTOM THE BUTTONS THO!*/
     }
