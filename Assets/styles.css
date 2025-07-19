@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    max-height: 120px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(165, 69, 255);
+    color: white;
+}
+
+header span, header div, header h1 {
+    display: inline-block;
+}
+
+header h1 {
+    padding: 10px;
+    padding-bottom: 10%;
+    display: inline-block;
+    width: fit-content;
+}
+
+.NavigationBar {
+    display: inline-block;
+}
+
+.NavigationBar.NavigationItems {
+    text-align: center;
+    padding: 20px 20px;
+    float: right;
+}
+
+.NavigationBar a {
+    padding: 0 8px 0 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: x-large;
+    transition: all .5s;
+}
+
+.NavigationBar a:hover {
+    color: rgb(123, 224, 255);
+}
+
+/*HOME*/
+
+.BackgroundHead {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Images/Backgroundfrom_wallpapercave_com.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.BackgroundHead h2 {
+    padding-top: 20vh;
+    text-align: center;
+    font-size: 21vh;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.BackgroundHead p {
+    font-style: italic;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 30px;
+    font-family: 'Handlee', cursive;
+}
+
+.BackgroundHead .ButtonList {
+    margin: 0;
+    position: absolute;
+    right: 35%;
+}
+
+.BackgroundHead .ButtonList button {
+    margin: auto;
+    display: inline-block;
+    padding: 0% 10px 0% 10px;
+    margin: 0 15px 0 15px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    border: none;
+    font-size: 5vh;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(144, 0, 255);
+    box-shadow: 0 8px 8px 0 rgba(147, 14, 219, 0.6);
+    transition: all ease 0.5s;
+}
+
+.BackgroundHead .ButtonList button:hover {
+     box-shadow: 0 0 8px 8px rgba(212, 83, 255, 0.74);
+     transform: scale(1.2);
+}
